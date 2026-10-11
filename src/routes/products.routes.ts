@@ -4,6 +4,7 @@ import { getMongoDb } from "../db/mongo.js";
 
 export const productsRouter = Router();
 
+// GET /api/products: consultar productos
 productsRouter.get("/", async (_req: Request, res: Response) => {
   try {
     const products = await getMongoDb()
@@ -43,7 +44,11 @@ productsRouter.post("/", async (req: Request, res: Response) => {
   }
 
   try {
-    const doc = { name, price, createdAt: new Date() };
+    const doc = {
+      name,
+      price,
+      createdAt: new Date(),
+    };
 
     const result = await getMongoDb()
       .collection("products")
@@ -51,7 +56,10 @@ productsRouter.post("/", async (req: Request, res: Response) => {
 
     res.status(201).json({
       database: "mongodb",
-      data: { _id: result.insertedId, ...doc },
+      data: {
+        _id: result.insertedId,
+        ...doc,
+      },
     });
   } catch (error) {
     const message =

@@ -27,7 +27,7 @@ beforeEach(() => {
 });
 
 describe("Products endpoints", () => {
-  // Test 1: creación exitosa
+  // Test 1: creación exitosa de un producto
   it("POST /api/products responde 201", async () => {
     mongoInsertOne.mockResolvedValueOnce({
       insertedId: "p1",
@@ -51,11 +51,13 @@ describe("Products endpoints", () => {
     expect(mongoInsertOne).toHaveBeenCalledOnce();
   });
 
-  // Test 2: validación
+  // Test 2: validación de un producto sin precio
   it("POST /api/products sin precio responde 400", async () => {
     const res = await request(app)
       .post("/api/products")
-      .send({ name: "Teclado" });
+      .send({
+        name: "Teclado",
+      });
 
     expect(res.status).toBe(400);
 
