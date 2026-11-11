@@ -1,0 +1,149 @@
+{
+  "fecha": "2026-11-11T17:15:57.706Z",
+  "modo": "productos",
+  "node": "v22.20.0",
+  "duracionTotalMs": 1281.74,
+  "archivos": 1,
+  "pruebas": 32,
+  "aprobadas": 32,
+  "fallidas": 0,
+  "detalle": [
+    {
+      "archivo": "G:/Downloads/TrabajosDevops/DevOps_ProductStore_Diana/devops-2026-2/tests/practica-productos/product-store.test.ts",
+      "duracionTestsMs": 51.5902999999999,
+      "pruebas": 32,
+      "aprobadas": 32,
+      "fallidas": 0,
+      "duraciones": [
+        {
+          "nombre": "al crear un producto asigna id, valores por defecto y la fecha actual",
+          "duracionMs": 9.1644
+        },
+        {
+          "nombre": "al crear un producto conserva el stock indicado y un precio decimal",
+          "duracionMs": 0.8087999999999624
+        },
+        {
+          "nombre": "al crear un producto normaliza nombre, sku y categoría",
+          "duracionMs": 1.184500000000014
+        },
+        {
+          "nombre": "al crear un producto rechaza un nombre vacío y no pierde lo ya guardado",
+          "duracionMs": 2.2993000000000166
+        },
+        {
+          "nombre": "al crear un producto acepta 80 caracteres en el nombre y rechaza 81",
+          "duracionMs": 0.8879000000000019
+        },
+        {
+          "nombre": "al crear un producto rechaza un precio ausente o negativo, y acepta cero",
+          "duracionMs": 1.3367999999999824
+        },
+        {
+          "nombre": "al crear un producto rechaza un precio NaN o infinito",
+          "duracionMs": 0.6702999999999975
+        },
+        {
+          "nombre": "al crear un producto rechaza un stock negativo o fraccionario",
+          "duracionMs": 0.5939000000000192
+        },
+        {
+          "nombre": "al crear un producto rechaza un sku vacío o con formato inválido",
+          "duracionMs": 12.622299999999996
+        },
+        {
+          "nombre": "al crear un producto rechaza un sku duplicado aunque cambie el uso de mayúsculas",
+          "duracionMs": 2.009999999999991
+        },
+        {
+          "nombre": "al crear un producto no comparte datos entre instancias",
+          "duracionMs": 1.0518999999999892
+        },
+        {
+          "nombre": "al crear un producto devuelve copias y no conserva el objeto de entrada",
+          "duracionMs": 1.9973999999999705
+        },
+        {
+          "nombre": "al consultar el almacén getById devuelve el producto o null",
+          "duracionMs": 0.37400000000002365
+        },
+        {
+          "nombre": "al consultar el almacén getBySku normaliza la búsqueda y devuelve null si no existe",
+          "duracionMs": 0.3261999999999716
+        },
+        {
+          "nombre": "al consultar el almacén list ordena por nombre en español y, si empatan, por sku",
+          "duracionMs": 0.7387000000000512
+        },
+        {
+          "nombre": "al consultar el almacén list filtra por búsqueda, categoría y activo",
+          "duracionMs": 1.265299999999968
+        },
+        {
+          "nombre": "al consultar el almacén un filtro de texto en blanco no descarta productos",
+          "duracionMs": 0.4257999999999811
+        },
+        {
+          "nombre": "al consultar el almacén list incluye los extremos del rango de precio",
+          "duracionMs": 0.6324000000000183
+        },
+        {
+          "nombre": "al consultar el almacén list rechaza un rango de precio inválido",
+          "duracionMs": 1.1190000000000282
+        },
+        {
+          "nombre": "al actualizar un producto cambia solo lo enviado y renueva updatedAt",
+          "duracionMs": 1.7672999999999774
+        },
+        {
+          "nombre": "al actualizar un producto acepta el mismo sku en otra combinación de mayúsculas",
+          "duracionMs": 2.516900000000021
+        },
+        {
+          "nombre": "al actualizar un producto rechaza el sku de otro producto y no deja cambios a medias",
+          "duracionMs": 1.7496999999999616
+        },
+        {
+          "nombre": "al actualizar un producto lanza NOT_FOUND si el id no existe",
+          "duracionMs": 0.42369999999999663
+        },
+        {
+          "nombre": "al actualizar un producto rechaza datos inválidos y no modifica el producto",
+          "duracionMs": 1.299000000000035
+        },
+        {
+          "nombre": "al actualizar un producto puede desactivar el producto y dejar la categoría vacía",
+          "duracionMs": 0.6791999999999803
+        },
+        {
+          "nombre": "al actualizar un producto un update sin campos no cambia updatedAt",
+          "duracionMs": 0.4616999999999507
+        },
+        {
+          "nombre": "al eliminar un producto borra solo ese producto y devuelve false si no existe",
+          "duracionMs": 0.3042000000000371
+        },
+        {
+          "nombre": "al eliminar un producto permite reutilizar el sku con otro id",
+          "duracionMs": 0.23579999999998336
+        },
+        {
+          "nombre": "al ajustar el stock suma y resta, y puede dejar el stock en cero",
+          "duracionMs": 0.712099999999964
+        },
+        {
+          "nombre": "al ajustar el stock rechaza un resultado negativo y no cambia el producto",
+          "duracionMs": 0.5171000000000276
+        },
+        {
+          "nombre": "al ajustar el stock rechaza un delta que no sea un entero distinto de cero",
+          "duracionMs": 1.0552999999999884
+        },
+        {
+          "nombre": "al ajustar el stock lanza NOT_FOUND si el id no existe",
+          "duracionMs": 0.3593999999999937
+        }
+      ]
+    }
+  ]
+}

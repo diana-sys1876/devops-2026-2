@@ -1,0 +1,16 @@
+{
+  "fechaConsulta": "2026-11-11T16:56:59.030Z",
+  "repositorio": "diana-sys1876/devops-2026-2",
+  "rama": "trazabilidad-DianaAyala",
+  "pullRequestAnterior": {
+    "numero": 83,
+    "titulo": "feat(products): implementa ProductStore - Diana Ayala",
+    "estado": "open",
+    "url": "https://github.com/uni-dev-labs/devops-2026-2/pull/83",
+    "ramaOrigen": "products-test-DianaAyala",
+    "commit": "08dce2c39a6d50e8879101151ddd18f0270e0264",
+    "ramaDestino": "main"
+  },
+  "ejecuciones": [],
+  "observaciones": []
+}

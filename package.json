@@ -13,7 +13,11 @@
     "test:productos": "vitest run --config vitest.productos.config.ts --reporter=default --reporter=json --outputFile=productos-results.json",
     "docker:up": "docker compose up --build -d",
     "docker:down": "docker compose down",
-    "docker:logs": "docker compose logs -f api"
+    "docker:logs": "docker compose logs -f api",
+    "benchmark:service": "node scripts/service-benchmark.mjs",
+    "test:timing": "node scripts/test-timing.mjs",
+    "test:timing:productos": "node scripts/test-timing.mjs productos",
+    "ci:timing": "node scripts/ci-timing.mjs"
   },
   "keywords": [
     "express",

@@ -1,0 +1,71 @@
+{
+  "fecha": "2026-11-11T17:15:54.891Z",
+  "modo": "general",
+  "node": "v22.20.0",
+  "duracionTotalMs": 2182.09,
+  "archivos": 3,
+  "pruebas": 8,
+  "aprobadas": 8,
+  "fallidas": 0,
+  "detalle": [
+    {
+      "archivo": "G:/Downloads/TrabajosDevops/DevOps_ProductStore_Diana/devops-2026-2/tests/app.test.ts",
+      "duracionTestsMs": 143.78179999999998,
+      "pruebas": 4,
+      "aprobadas": 4,
+      "fallidas": 0,
+      "duraciones": [
+        {
+          "nombre": "API endpoints GET /health responde ok",
+          "duracionMs": 86.20249999999987
+        },
+        {
+          "nombre": "API endpoints GET /api/postgres/users devuelve la lista de usuarios",
+          "duracionMs": 8.974100000000135
+        },
+        {
+          "nombre": "API endpoints POST /api/postgres/users sin email responde 400",
+          "duracionMs": 32.371200000000044
+        },
+        {
+          "nombre": "API endpoints POST /api/mongo/users crea un usuario y responde 201",
+          "duracionMs": 16.233999999999924
+        }
+      ]
+    },
+    {
+      "archivo": "G:/Downloads/TrabajosDevops/DevOps_ProductStore_Diana/devops-2026-2/tests/pagination.service.test.ts",
+      "duracionTestsMs": 5.540599999999927,
+      "pruebas": 2,
+      "aprobadas": 2,
+      "fallidas": 0,
+      "duraciones": [
+        {
+          "nombre": "parsePagination calcula page, limit y offset a partir del query string",
+          "duracionMs": 4.934700000000021
+        },
+        {
+          "nombre": "parsePagination usa valores por defecto con datos inválidos y respeta el límite máximo",
+          "duracionMs": 0.605899999999906
+        }
+      ]
+    },
+    {
+      "archivo": "G:/Downloads/TrabajosDevops/DevOps_ProductStore_Diana/devops-2026-2/tests/products.test.ts",
+      "duracionTestsMs": 114.19500000000016,
+      "pruebas": 2,
+      "aprobadas": 2,
+      "fallidas": 0,
+      "duraciones": [
+        {
+          "nombre": "Products endpoints POST /api/products crea un producto y responde 201",
+          "duracionMs": 102.37990000000013
+        },
+        {
+          "nombre": "Products endpoints POST /api/products sin precio responde 400",
+          "duracionMs": 11.81510000000003
+        }
+      ]
+    }
+  ]
+}
