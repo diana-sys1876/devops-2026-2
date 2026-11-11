@@ -1,0 +1,102 @@
+{
+  "fecha": "2026-11-11T17:15:51.489Z",
+  "node": "v22.20.0",
+  "resultados": [
+    {
+      "servicio": "ProductStore crear",
+      "operaciones": 1000,
+      "promedioMs": 0.0196,
+      "p95Ms": 0.044,
+      "maximoMs": 1.252,
+      "throughput": 50120,
+      "cpuMs": 31,
+      "heapMB": 20.88,
+      "rssMB": 66.01,
+      "heapDeltaMB": 5.07
+    },
+    {
+      "servicio": "ProductStore buscar ID",
+      "operaciones": 1000,
+      "promedioMs": 0.0009,
+      "p95Ms": 0.0012,
+      "maximoMs": 0.0459,
+      "throughput": 880980,
+      "cpuMs": 0,
+      "heapMB": 21.58,
+      "rssMB": 66.99,
+      "heapDeltaMB": 0.57
+    },
+    {
+      "servicio": "ProductStore buscar SKU",
+      "operaciones": 1000,
+      "promedioMs": 0.0116,
+      "p95Ms": 0.0224,
+      "maximoMs": 1.3251,
+      "throughput": 84357,
+      "cpuMs": 0,
+      "heapMB": 19.01,
+      "rssMB": 68.13,
+      "heapDeltaMB": -2.71
+    },
+    {
+      "servicio": "ProductStore listar",
+      "operaciones": 100,
+      "promedioMs": 25.875,
+      "p95Ms": 49.0591,
+      "maximoMs": 61.7082,
+      "throughput": 39,
+      "cpuMs": 2532,
+      "heapMB": 17.28,
+      "rssMB": 105.04,
+      "heapDeltaMB": -1.76
+    },
+    {
+      "servicio": "ProductStore actualizar",
+      "operaciones": 1000,
+      "promedioMs": 0.0025,
+      "p95Ms": 0.0026,
+      "maximoMs": 0.2374,
+      "throughput": 378329,
+      "cpuMs": 0,
+      "heapMB": 18.58,
+      "rssMB": 105.14,
+      "heapDeltaMB": 1.2
+    },
+    {
+      "servicio": "ProductStore stock",
+      "operaciones": 1000,
+      "promedioMs": 0.0016,
+      "p95Ms": 0.002,
+      "maximoMs": 0.1214,
+      "throughput": 576136,
+      "cpuMs": 0,
+      "heapMB": 19.65,
+      "rssMB": 105.14,
+      "heapDeltaMB": 0.94
+    },
+    {
+      "servicio": "ProductStore eliminar",
+      "operaciones": 1000,
+      "promedioMs": 0.0004,
+      "p95Ms": 0.0004,
+      "maximoMs": 0.0551,
+      "throughput": 2002002,
+      "cpuMs": 0,
+      "heapMB": 20.01,
+      "rssMB": 105.22,
+      "heapDeltaMB": 0.23
+    },
+    {
+      "servicio": "Express HTTP health",
+      "operaciones": 100,
+      "promedioMs": 1.7891,
+      "p95Ms": 5.1116,
+      "maximoMs": 9.2031,
+      "throughput": 558,
+      "cpuMs": 312,
+      "heapMB": 23.98,
+      "rssMB": 82.34,
+      "heapDeltaMB": 1.11
+    }
+  ]
+}
